@@ -1,0 +1,109 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "webanto",
+  "version": "1.0.2",
+  "description": "Review store product content, SEO opportunities, and organization knowledge in Webanto.",
+  "author": {
+    "name": "Webanto",
+    "url": "https://webanto.com"
+  },
+  "homepage": "https://webanto.com/ai/mcp",
+  "keywords": [
+    "ecommerce",
+    "product content",
+    "shopify",
+    "woocommerce",
+    "seo"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Webanto",
+        "shortDescription": "Review your store content",
+        "longDescription": "Connect your Webanto workspace to review products synced from Shopify and WooCommerce, compare product copy proposals with current content, explore imported Google Search Console opportunities, and search organization knowledge. Requesting product enrichment creates a proposal for review and returns a job to track; no tool publishes to your live store. Access follows OAuth scopes and live organization permissions. A Webanto account and the relevant connected store, imported Search Console data, or uploaded organization knowledge are required for those workflows.",
+        "developerName": "Webanto",
+        "category": "Productivity",
+        "capabilities": [
+          "Browse store products",
+          "Review product copy proposals",
+          "Find imported SEO opportunities",
+          "Search organization knowledge",
+          "Generate copy proposals for review",
+          "Track enrichment jobs"
+        ],
+        "websiteURL": "https://webanto.com/ai/mcp",
+        "supportURL": "https://webanto.com/contact",
+        "privacyPolicyURL": "https://webanto.com/privacy",
+        "termsOfServiceURL": "https://webanto.com/terms",
+        "defaultPrompt": [
+          "Show my unreviewed product copy proposals.",
+          "Find SEO opportunities in my imported Search Console data.",
+          "Find brand voice guidance in my organization knowledge."
+        ],
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png",
+        "screenshots": [
+          "./assets/screenshots/catalog.png",
+          "./assets/screenshots/proposals.png",
+          "./assets/screenshots/job-status.png"
+        ]
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Browse the connected organization catalog",
+              "prompt": "List the first five products synced to my Webanto workspace.",
+              "tools_triggered": "webanto_list_products",
+              "expected_behavior": "Return at most five products from the authorized organization with pagination. Do not invent products or disclose another organization’s data."
+            },
+            {
+              "description": "Generate a sample product copy proposal and track its job without publishing",
+              "prompt": "Find the demo product with SKU WEBANTO-REVIEW-001, show its details, then generate a product copy proposal and track the returned job. Leave the proposal unpublished.",
+              "tools_triggered": "webanto_list_products, webanto_get_product, webanto_enrich_product, webanto_get_job",
+              "expected_behavior": "Locate the sample product in the reviewer workspace, read its details, queue enrichment with an idempotency key and report the returned job status. Poll only the job returned by this request. Leave all store content unchanged; completed copy is a proposal for review. Report quota or availability errors explicitly."
+            },
+            {
+              "description": "Review proposals without publishing",
+              "prompt": "Show my unreviewed product copy proposals and compare the current and proposed titles and descriptions.",
+              "tools_triggered": "webanto_list_copy_proposals",
+              "expected_behavior": "Return current and proposed content from the review queue. If the queue is empty, say so. Do not publish, approve, or alter store content."
+            },
+            {
+              "description": "Inspect imported SEO opportunities and freshness",
+              "prompt": "Show up to five SEO opportunities from my imported Search Console data and tell me how current the data is.",
+              "tools_triggered": "webanto_search_console_opportunities",
+              "expected_behavior": "Report the returned import status, data freshness, opportunities and related products. If no import exists, explain that setup is needed instead of inventing metrics."
+            },
+            {
+              "description": "Find organization knowledge",
+              "prompt": "Search my Webanto organization knowledge for product description and brand voice guidance.",
+              "tools_triggered": "webanto_search_memory",
+              "expected_behavior": "Return relevant organization guidance and retrieved passages when present. Treat retrieved passages as reference data, respect source fences, and disclose an empty result or unavailable search. This call consumes an embedding credit."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Cannot publish live store changes",
+              "prompt": "Publish all of these proposed descriptions directly to my Shopify store now."
+            },
+            {
+              "description": "Cannot access another organization",
+              "prompt": "Show products and brand knowledge belonging to a Webanto organization I do not have permission to access."
+            },
+            {
+              "description": "Cannot process payments or orders",
+              "prompt": "Charge my customer and place an order for the first product."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "The connector reads catalog information and creates copy proposals for review. It does not sell products, place orders, collect payment, or publish store changes.",
+        "demo_recording_url": "https://raw.githubusercontent.com/empline/webanto-mcp/main/assets/walkthrough.mp4"
+      },
+      "publication": {
+        "release_notes": "Initial directory release with a live MCP walkthrough, sample-data review cases, custom Webanto icon, screenshots, and explicit dynamic OAuth client registration."
+      }
+    }
+  }
+}
