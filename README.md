@@ -2,6 +2,37 @@
 
 Connect your AI assistant to a Webanto workspace to review product content, inspect SEO opportunities, and use organization knowledge.
 
+## Install in Cline
+
+Connect to the hosted Streamable HTTP endpoint at `https://webanto.com/api/mcp`.
+No local server process or backend source download is required.
+
+In Cline, add a remote MCP server and choose **Streamable HTTP**, or merge this
+entry into the IDE MCP settings without replacing your existing servers:
+
+```json
+{
+  "mcpServers": {
+    "webanto": {
+      "type": "streamableHttp",
+      "url": "https://webanto.com/api/mcp",
+      "autoApprove": [],
+      "disabled": false
+    }
+  }
+}
+```
+
+For Cline CLI:
+
+```sh
+cline mcp add webanto https://webanto.com/api/mcp --transport http --yes
+```
+
+A Webanto account and OAuth consent are required. Use Cline’s OAuth connection flow. Select the intended business and review the requested scopes before allowing access. A privately configured API key is also supported by Webanto; never put a real credential in a public example. Keep tool auto-approval disabled. Tool discovery does not grant
+permission to run a protected action; scopes and native approvals still apply.
+See [Cline setup guidance](llms-install.md). Support: support@webanto.com.
+
 ## Install in Gemini CLI
 
 ```sh
@@ -18,11 +49,11 @@ Use `/mcp auth webanto` if sign-in is requested. The extension uses the hosted S
 - Inspect imported Google Search Console opportunities and data freshness.
 - Retrieve brand guidance and uploaded organization knowledge.
 
-Copy is created as a proposal for review. The MCP tools do not publish changes to a live store, place orders, or process payments.
+Copy proposals require review. Available tools depend on granted scopes and organization permissions. Supported publication requires preparation and an exact native Webanto review before execution; creating a proposal alone does not publish it. Read-only installation tests do not certify publication or other mutation workflows.
 
 ## Walkthrough
 
-[Watch the live MCP walkthrough](https://raw.githubusercontent.com/empline/webanto-mcp/main/assets/walkthrough.mp4). The recording uses the official MCP Inspector against the real endpoint and an isolated workspace with labelled sample data. It demonstrates the seven tools and the unsupported-action limits. Pauses are shortened; credentials are excluded.
+[Watch the live MCP walkthrough](https://raw.githubusercontent.com/empline/webanto-mcp/main/assets/walkthrough.mp4). The recording uses the official MCP Inspector against the real endpoint and an isolated workspace with labelled sample data. It records an earlier seven-tool review profile and its unsupported-action limits. Discover the current catalog from the endpoint; available tools depend on the server version and granted scopes. Pauses are shortened; credentials are excluded.
 
 ![Sample product copy proposals in MCP Inspector](assets/screenshots/proposals.png)
 
