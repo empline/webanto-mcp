@@ -8,13 +8,7 @@
     "url": "https://webanto.com"
   },
   "homepage": "https://webanto.com/ai/mcp",
-  "keywords": [
-    "ecommerce",
-    "product content",
-    "shopify",
-    "woocommerce",
-    "seo"
-  ],
+  "keywords": ["ecommerce", "product content", "shopify", "woocommerce", "seo"],
   "extensions": {
     "com.openai": {
       "interface": {
