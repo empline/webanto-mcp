@@ -4,5 +4,6 @@
   "title": "Webanto",
   "domain": "webanto.com",
   "auth": "discovery",
-  "toolExposure": "runtime-discovery"
+  "toolExposure": "runtime-discovery",
+  "distribution": "app-owned"
 }

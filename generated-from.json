@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "sourceRepository": "https://github.com/empline/webanto",
+  "sourceDirectory": "integrations/mcp",
+  "manifestSource": "integrations/gemini/gemini-extension.json",
+  "sourceSha256": "4634cf980ec078be351f700c24cbd0a4f499841529e9884421aad1ab6ac70bd8",
+  "toolingSha256": "398224913e48bede6f9847a5719c32235e3c4a5df29a0143dc9407b20fed8d88",
+  "files": {
+    ".githooks/pre-commit": {
+      "sha256": "7754c2c2a0a14669666e65179587db634a82b85531bb8526817cfb8bb22069ff",
+      "mode": 33261
+    },
+    ".githooks/pre-push": {
+      "sha256": "7754c2c2a0a14669666e65179587db634a82b85531bb8526817cfb8bb22069ff",
+      "mode": 33261
+    },
+    ".gitignore": {
+      "sha256": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+      "mode": 33188
+    },
+    "LICENSE": {
+      "sha256": "7e231b559e413abee4fd5c2fd66890b817e21452d83329a571b10e650e896266",
+      "mode": 33188
+    },
+    "README.md": {
+      "sha256": "70cbf17e73dbf50e13185a0ada575e7f55179939dbf36f64ba0cb1ff75f01920",
+      "mode": 33188
+    },
+    "assets/cline-logo-400.png": {
+      "sha256": "48b54ccb861d6aa5da1956a9d448fc2654e53bf1d4d5973f776b55d8403a9766",
+      "mode": 33188
+    },
+    "assets/icon.png": {
+      "sha256": "0ee29e81310c7aec1324e21aad8be08ea728ffc6b0155c21baada696da489ac7",
+      "mode": 33188
+    },
+    "assets/screenshots/catalog.png": {
+      "sha256": "3bc95c4e7624eeccb823a7af191bd77b5e0520622b76d290218b4c5ad40f0ff0",
+      "mode": 33188
+    },
+    "assets/screenshots/job-status.png": {
+      "sha256": "bead9ef87667da1d7d5eaf9c1e0bd810ab78f0188ee8565d71b1a0733130277d",
+      "mode": 33188
+    },
+    "assets/screenshots/proposals.png": {
+      "sha256": "93e7f698ec3cf1288c7dd4d3fea725e6f2876929f9c4f85344185462401d9b43",
+      "mode": 33188
+    },
+    "assets/walkthrough.mp4": {
+      "sha256": "158e79ee5594097753477a09d4ad8bf94971edeeb3ce4ac7a78fe8ce64a0c609",
+      "mode": 33188
+    },
+    "cline-installation-proof.json": {
+      "sha256": "450bac628ac5dcffc03d8b20d955831e43f2c376afd1b6c4b22bfe02bc1dd645",
+      "mode": 33188
+    },
+    "connector-policy.json": {
+      "sha256": "a7990a45321ac95a2e6321885a50307dc5c1f190e5fa0f88b48cec969b6b69c2",
+      "mode": 33188
+    },
+    "gemini-extension.json": {
+      "sha256": "cae71cb149c0fdbc3a300e916c026ef2e049be0e5a4f7f6e7281c2c5591752f6",
+      "mode": 33188
+    },
+    "llms-install.md": {
+      "sha256": "bc4e527af629e160c7fea5ce4aa4fbff313d688fb346ea85e65a7ab826599fc5",
+      "mode": 33188
+    },
+    "mcp.json": {
+      "sha256": "796d7bf1c32dba2ae81548ab3f10caff1ad2c91e0c420100e9ba57ac422a4a9b",
+      "mode": 33188
+    },
+    "package-lock.json": {
+      "sha256": "e856029c4f06aaf7ba48dd7bc6330a6295d0ff4e7ebafcfe29d10463a8ff41cd",
+      "mode": 33188
+    },
+    "package.json": {
+      "sha256": "649b24ab7aeb14bdcc4b50f3d1a561f3562f6e72c2e4e84ca4546947837a7b84",
+      "mode": 33188
+    },
+    "plugin.json": {
+      "sha256": "c0bd8f6448dbeb607e1206c7050adaa00272f300cb18f309158335cb8ac4fd3d",
+      "mode": 33188
+    },
+    "scripts/contract.mjs": {
+      "sha256": "01f781b2d0b5fa513ae069e910292c82765771e06fe344ddf0d5b0604fa1c995",
+      "mode": 33188
+    },
+    "scripts/install-hooks.mjs": {
+      "sha256": "72b9eb3417859228f212e71bf963498b8363eda6f26aba79771afee4cc351c7b",
+      "mode": 33188
+    },
+    "scripts/validate.mjs": {
+      "sha256": "08bc27577be83b97f763ff42088ab230101bcfa64b6a95c0c97d697774eca439",
+      "mode": 33188
+    },
+    "tests/contract.test.mjs": {
+      "sha256": "9815d1d20e306b2605459a68847bb50c5da7a43288a5910c4d5518de0e7ca9e1",
+      "mode": 33188
+    }
+  }
+}
