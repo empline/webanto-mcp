@@ -16,11 +16,7 @@
   "authentication": {
     "mode": "oauth",
     "authenticated": true,
-    "scopes": [
-      "jobs:read",
-      "memory:read",
-      "products:read"
-    ],
+    "scopes": ["jobs:read", "memory:read", "products:read"],
     "businessContextMatched": true
   },
   "privateAccountAndWriteAcceptance": "not-tested",

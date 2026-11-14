@@ -3,7 +3,7 @@
   "sourceRepository": "https://github.com/empline/webanto",
   "sourceDirectory": "integrations/mcp",
   "manifestSource": "integrations/gemini/gemini-extension.json",
-  "sourceSha256": "4634cf980ec078be351f700c24cbd0a4f499841529e9884421aad1ab6ac70bd8",
+  "sourceSha256": "424ee4b26940f433b568584b257456311b5a67508ed8fe2cbd68bdf8286f5d10",
   "toolingSha256": "398224913e48bede6f9847a5719c32235e3c4a5df29a0143dc9407b20fed8d88",
   "files": {
     ".githooks/pre-commit": {
@@ -51,7 +51,7 @@
       "mode": 33188
     },
     "cline-installation-proof.json": {
-      "sha256": "450bac628ac5dcffc03d8b20d955831e43f2c376afd1b6c4b22bfe02bc1dd645",
+      "sha256": "b91e6179352809d666c901047fe7e4fad340f501b9f94a6e930a002a256401e7",
       "mode": 33188
     },
     "connector-policy.json": {
@@ -79,7 +79,7 @@
       "mode": 33188
     },
     "plugin.json": {
-      "sha256": "c0bd8f6448dbeb607e1206c7050adaa00272f300cb18f309158335cb8ac4fd3d",
+      "sha256": "bc934e83f5e65f9cdf154e3aa7ccaa475f4b24f9e727dde8def821ae0b3d4068",
       "mode": 33188
     },
     "scripts/contract.mjs": {
