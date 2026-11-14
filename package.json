@@ -1,0 +1,17 @@
+{
+  "name": "webanto-mcp",
+  "version": "1.0.3",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/empline/webanto-mcp.git"
+  },
+  "scripts": {
+    "test": "node scripts/validate.mjs && node --test tests/contract.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3"
+  }
+}

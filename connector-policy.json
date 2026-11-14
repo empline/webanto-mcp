@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "name": "webanto",
+  "title": "Webanto",
+  "domain": "webanto.com",
+  "auth": "discovery",
+  "toolExposure": "runtime-discovery"
+}
