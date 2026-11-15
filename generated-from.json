@@ -3,8 +3,8 @@
   "sourceRepository": "https://github.com/empline/webanto",
   "sourceDirectory": "integrations/mcp",
   "manifestSource": "integrations/gemini/gemini-extension.json",
-  "sourceSha256": "0fda358ceca559e84607adefdcab4789c57e01305ad6b6eb13aeb4996487fee5",
-  "toolingSha256": "984d914ff4bc84c24fd88a3d106ab3f0ab20d4be4886d6ce0d07e55f237e9e01",
+  "sourceSha256": "61316c38b696298e3050dbb9c63c69b81ca498c72c6f68afa79234f9370d5965",
+  "toolingSha256": "afcb0183237d6debdc9d8a91964692a1707b86827d75ac78b11345c1ca37ca31",
   "files": {
     ".githooks/commit-msg": {
       "sha256": "f82321fc6a4e76f639b90d076439963321be8a06ea0b1744e469cd66f3acff0f",
@@ -67,7 +67,7 @@
       "mode": 33188
     },
     "gemini-extension.json": {
-      "sha256": "7e858dba5faefedc8cb360586e83c9535beee6ffc6f85cf80e9b9ab7d8d0423a",
+      "sha256": "d3f78fbc87b736e7383059cdda8ada87c9f08d7b6e7ad1d4b39c3d1fb12158cd",
       "mode": 33188
     },
     "llms-install.md": {
@@ -79,11 +79,11 @@
       "mode": 33188
     },
     "package-lock.json": {
-      "sha256": "207a71b93c8a39bc98dea9c8a578cba903988d4266a30a5d098fa77e79528baa",
+      "sha256": "62928f1c079061f9d54c9cd17c92bb256ecd5675d32c01533d46393ecdd6419e",
       "mode": 33188
     },
     "package.json": {
-      "sha256": "d5f05b47bb1970950b6c414da57ed81b7f6bd44fddd10819cedb73e999ce1702",
+      "sha256": "0d7f1e9822dc4e28fc9564e8f08b6c5e56bb9d24220eeff4e7ad6c120b9b54fe",
       "mode": 33188
     },
     "plugin.json": {
@@ -91,7 +91,7 @@
       "mode": 33188
     },
     "scripts/contract.mjs": {
-      "sha256": "f1105fea22b0af8f6c6d56cbb7bf9ae46a63c565a18895f3075f22ec81512e69",
+      "sha256": "b530ec8c5de7500af5465d625d4ae69b81d26087c54f17f0de7a78e135ba1a8e",
       "mode": 33188
     },
     "scripts/git-attribution.cjs": {
