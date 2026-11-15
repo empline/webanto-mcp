@@ -3,15 +3,23 @@
   "sourceRepository": "https://github.com/empline/webanto",
   "sourceDirectory": "integrations/mcp",
   "manifestSource": "integrations/gemini/gemini-extension.json",
-  "sourceSha256": "e91099771b88743802d3d417a8bbbed338906c1b636837e3d426ebf4ac80b468",
-  "toolingSha256": "62f79bf45fea352b5b30993538707b2ef4cb756d5b495b2980afa136c0c06016",
+  "sourceSha256": "0fda358ceca559e84607adefdcab4789c57e01305ad6b6eb13aeb4996487fee5",
+  "toolingSha256": "984d914ff4bc84c24fd88a3d106ab3f0ab20d4be4886d6ce0d07e55f237e9e01",
   "files": {
+    ".githooks/commit-msg": {
+      "sha256": "f82321fc6a4e76f639b90d076439963321be8a06ea0b1744e469cd66f3acff0f",
+      "mode": 33261
+    },
     ".githooks/pre-commit": {
       "sha256": "35ceec1f1305ff1e2837d603f8b7b69b175456ee1b4ba93c16d6bb465a8a3962",
       "mode": 33261
     },
     ".githooks/pre-push": {
       "sha256": "1b53a94f04b3d62f31323c90cb88b2c2a94bd159b6033eacf18829577da0cd7c",
+      "mode": 33261
+    },
+    ".githooks/prepare-commit-msg": {
+      "sha256": "f82321fc6a4e76f639b90d076439963321be8a06ea0b1744e469cd66f3acff0f",
       "mode": 33261
     },
     ".gitignore": {
@@ -59,7 +67,7 @@
       "mode": 33188
     },
     "gemini-extension.json": {
-      "sha256": "cae71cb149c0fdbc3a300e916c026ef2e049be0e5a4f7f6e7281c2c5591752f6",
+      "sha256": "7e858dba5faefedc8cb360586e83c9535beee6ffc6f85cf80e9b9ab7d8d0423a",
       "mode": 33188
     },
     "llms-install.md": {
@@ -71,11 +79,11 @@
       "mode": 33188
     },
     "package-lock.json": {
-      "sha256": "e856029c4f06aaf7ba48dd7bc6330a6295d0ff4e7ebafcfe29d10463a8ff41cd",
+      "sha256": "207a71b93c8a39bc98dea9c8a578cba903988d4266a30a5d098fa77e79528baa",
       "mode": 33188
     },
     "package.json": {
-      "sha256": "649b24ab7aeb14bdcc4b50f3d1a561f3562f6e72c2e4e84ca4546947837a7b84",
+      "sha256": "d5f05b47bb1970950b6c414da57ed81b7f6bd44fddd10819cedb73e999ce1702",
       "mode": 33188
     },
     "plugin.json": {
@@ -83,19 +91,27 @@
       "mode": 33188
     },
     "scripts/contract.mjs": {
-      "sha256": "ce37d3e94d7990835d6f11e5d12f52108c8aeaf30a674e8c4102552ae8abeca6",
+      "sha256": "f1105fea22b0af8f6c6d56cbb7bf9ae46a63c565a18895f3075f22ec81512e69",
+      "mode": 33188
+    },
+    "scripts/git-attribution.cjs": {
+      "sha256": "59f4e5078cabc8f5ce0daec37bee7cf65c597021fe45b0b8ede264560a2979bf",
       "mode": 33188
     },
     "scripts/install-hooks.mjs": {
       "sha256": "72b9eb3417859228f212e71bf963498b8363eda6f26aba79771afee4cc351c7b",
       "mode": 33188
     },
+    "scripts/validate-attribution.cjs": {
+      "sha256": "41da62d9df445da990ff777b6cd8108bdf565d87867c9eabe8b39eb9d2e7a67f",
+      "mode": 33188
+    },
     "scripts/validate.mjs": {
-      "sha256": "efcfcd73affec91628fba89758ae874e7cf93981037ed94ac4ac912d696caf9a",
+      "sha256": "3a5e8f4cfec9f28336bca6c4027f90c70817bffb6ed14fadb54900035b80b6ac",
       "mode": 33188
     },
     "tests/contract.test.mjs": {
-      "sha256": "9815d1d20e306b2605459a68847bb50c5da7a43288a5910c4d5518de0e7ca9e1",
+      "sha256": "e9ee594792cd887b34060f19c1640321e4abe7313ef19cc5b91c17c307abb320",
       "mode": 33188
     }
   }
